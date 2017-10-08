@@ -60,6 +60,7 @@ def winner(board)
       if win_check == check
         return board[win_check[0]]
       end
+    end
   else
     return false
   end
