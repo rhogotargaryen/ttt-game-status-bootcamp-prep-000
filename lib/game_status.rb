@@ -24,7 +24,7 @@ def won?(board)
 end
 
 def full?(board)
-  counter = 0
+  counter = 1
   board.select do |check|
     if check == "X" || check == "O"
       counter += 1
