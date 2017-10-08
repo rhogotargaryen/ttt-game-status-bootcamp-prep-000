@@ -33,4 +33,6 @@ def full?(board)
       return true
     end
   end
+  if counter == board.length
+    return true
 end
