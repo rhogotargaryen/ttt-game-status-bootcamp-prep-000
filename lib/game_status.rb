@@ -56,6 +56,10 @@ end
 def winner (board)
   if won?
     win_check = won?
+    WIN_COMBINATIONS.each do |check|
+      if win_check == check
+        return board[win_check[0]]
+      end
   else
     return false
   end
