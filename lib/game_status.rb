@@ -13,7 +13,11 @@ WIN_COMBINATIONS = [
   [2, 5, 8],
   [1, 4, 7],
   [0, 3, 6],
-
-
-
 ]
+
+def won?(board)
+  WIN_COMBINATIONS.detect do |winner|
+    board[winner[0]] == board[winner[1]] &&
+    board[winner[2]]
+  end
+end
