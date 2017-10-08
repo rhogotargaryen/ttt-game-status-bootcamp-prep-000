@@ -53,7 +53,7 @@ def over?(board)
  end
 end
 
-def winner (board)
+def winner(board)
   if won?
     win_check = won?
     WIN_COMBINATIONS.detect do |check|
