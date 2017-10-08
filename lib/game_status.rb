@@ -59,6 +59,6 @@ def winner(board)
     return board[win_check[0]]
   else
     win_check = []
-    return win_check
+    return nil
   end
 end
