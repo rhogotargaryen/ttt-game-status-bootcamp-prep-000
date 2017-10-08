@@ -54,10 +54,14 @@ def over?(board)
 end
 
 def winner (board)
-  win_check = won?
-    WIN_COMBINATIONS.each do |check|
-      if win_check == check
-        return board[win_check[0]]
+  if won?
+    win_check = won?
+  else
+    return false
+  end
+  WIN_COMBINATIONS.each do |check|
+    if win_check == check
+      return board[win_check[0]]
     end
   end
 end
