@@ -29,10 +29,10 @@ def full?(board)
     if check == "X" || check == "O"
       counter += 1
     end
-    if counter == board.length
-      return true
-    end
+
   end
   if counter == board.length
     return true
+  else
+    return false
 end
