@@ -29,7 +29,7 @@ def full?(board)
     if check == "X" || check == "O"
       counter += 1
     end
-    if counter == 9
+    if counter == 10
       return true
     else
       return false
