@@ -24,12 +24,12 @@ def won?(board)
 end
 
 def full?(board)
-  counter = 1
+  counter = 0
   board.select do |check|
     if check == "X" || check == "O"
       counter += 1
     end
-    if counter == 10
+    if counter == 8
       return true
     else
       return false
